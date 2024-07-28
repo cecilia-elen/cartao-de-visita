@@ -6,9 +6,10 @@ body {
     background-position: right left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
+    flex-direction: column; /* Alinhamento vertical */
     justify-content: center;
     align-items: center;
-    height: 100%;
+    min-height: 100vh; /* Altura mínima total da viewport */
     margin: 0;
     padding: 20px;
     color: #ffffff;
@@ -22,8 +23,8 @@ body {
     text-align: center;
     padding: 30px;
     border: 8px inset #3cb371;
+    margin-bottom: 20px; /* Espaço entre o card e o rodapé */
 }
-
 
 .foto {
     border-radius: 50%;
@@ -32,7 +33,6 @@ body {
     border: 5px outset #3cb371; /* Borda verde */
     margin-bottom: 20px;
 }
-
 
 .info {
     text-align: center;
@@ -46,14 +46,14 @@ h1 {
     margin: 0 0 15px 0;
 }
 
-
-.profissao, .email, .endereco {
-    color: #333333; 
+.profissao,
+.email,
+.endereco {
+    color: #333333;
     font-size: 18px;
     margin: 8px 0;
     font-weight: 8800;
 }
-
 
 .espaco {
     margin-top: 25px;
@@ -74,16 +74,39 @@ h1 {
 }
 
 .btn:hover {
-    background-color: #2e8b57; 
-    transform: scale(1.05); 
+    background-color: #2e8b57;
+    transform: scale(1.05);
 }
 
 .btn-cv {
     margin-bottom: 20px;
 }
 
-.credito{
-    height: 40px;
-    color: #333333; 
-    margin: -3px;
+/* Estilização das imagens das redes sociais */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaço entre as imagens */
+}
+
+.redes-sociais img {
+    width: 40px; /* Largura uniforme para todas as imagens */
+    height: 40px; /* Altura uniforme para todas as imagens */
+    border-radius: 5px; /* Opcional: bordas arredondadas para as imagens */
+    transition: transform 0.2s; /* Animação ao passar o mouse */
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.1); /* Ampliar levemente ao passar o mouse */
+}
+
+/* Estilização do rodapé */
+.rodape {
+    background-color: #ffffff; /* Cor de fundo branco */
+    color: #3cb371; /* Texto verde */
+    font-size: 18px; /* Tamanho da fonte maior */
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 2px solid #3cb371; /* Linha verde para separar o rodapé */
 }
