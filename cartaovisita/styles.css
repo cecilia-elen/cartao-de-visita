@@ -1,0 +1,89 @@
+/* Estilização geral do corpo da página */
+body {
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+    width: 320px;
+    text-align: center;
+    padding: 30px;
+    border: 8px inset #3cb371;
+}
+
+
+.foto {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    border: 5px outset #3cb371; /* Borda verde */
+    margin-bottom: 20px;
+}
+
+
+.info {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h1 {
+    color: #3cb371;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+
+.profissao, .email, .endereco {
+    color: #333333; 
+    font-size: 18px;
+    margin: 8px 0;
+    font-weight: 8800;
+}
+
+
+.espaco {
+    margin-top: 25px;
+}
+
+.btn {
+    display: block;
+    background-color: #3cb371;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 10px auto;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 80%;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #2e8b57; 
+    transform: scale(1.05); 
+}
+
+.btn-cv {
+    margin-bottom: 20px;
+}
+
+.credito{
+    height: 40px;
+    color: #333333; 
+    margin: -3px;
+}
