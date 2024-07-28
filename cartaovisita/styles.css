@@ -61,7 +61,7 @@ h1 {
 
 .btn {
     display: block;
-    background-color: #3cb371;
+    background-color: #256341;
     color: white;
     font-weight: bold;
     padding: 12px 25px;
@@ -74,7 +74,7 @@ h1 {
 }
 
 .btn:hover {
-    background-color: #2e8b57;
+    background-color: #17462b;
     transform: scale(1.05);
 }
 
